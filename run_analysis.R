@@ -52,4 +52,5 @@ tidy_data <- data_set2 %>%
   summarise_all(mean)
     
 ##Making tidy data into a text file
-write.table(tidy_data, file = "tidy_data.txt")
+write.table(tidy_data, row.name = FALSE, file = "tidy_data.txt")
+
